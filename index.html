@@ -1,0 +1,202 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-blue-100 font-sans">
+    <header class="h-[80px] bg-white flex items-center justify-between rounded-lg lg:ml-[120px] px-10">
+        <div class="flex items-center rounded-full
+        bg-blue-100 ">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" class="text-[#6b99c7] text-xs" />
+            </svg>
+            <input type="text" placeholder="Search..."
+                class="focus:outline-none p-2 text-xs w-full bg-blue-100 rounded-full pr-[100px] ">
+        </div>
+        <div class="flex items-center space-x-6 text-gray-600 xl:space-x-9">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M12 9v3m0 0v3m0-3h3m-3 0H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z" />
+            </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9" />
+            </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                <path fill-rule="evenodd"
+                    d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-6-3a2 2 0 11-4 0 2 2 0 014 0zm-2 4a5 5 0 00-4.546 2.916A5.986 5.986 0 0010 16a5.986 5.986 0 004.546-2.084A5 5 0 0010 11z"
+                    clip-rule="evenodd" />
+            </svg>
+        </div>
+
+    </header>
+    <aside
+        class=" hidden lg:inline absolute left-0 w-[80px] bg-white rounded-md h-screen top-0 flex flex-col justify-between items-center text-blue-300">
+        <div class="flex flex-col items-center space-y-7 my-10">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                <path fill-rule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z" clip-rule="evenodd" />
+            </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                <path fill-rule="evenodd"
+                    d="M18 3a1 1 0 00-1.447-.894L8.763 6H5a3 3 0 000 6h.28l1.771 5.316A1 1 0 008 18h1a1 1 0 001-1v-4.382l6.553 3.276A1 1 0 0018 15V3z"
+                    clip-rule="evenodd" />
+            </svg>
+
+        </div>
+        <div class="mb-20 pt-6 border-t border-gray-400 w-full flex items-center justify-center ">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                <path fill-rule="evenodd"
+                    d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-8.707l-3-3a1 1 0 00-1.414 1.414L10.586 9H7a1 1 0 100 2h3.586l-1.293 1.293a1 1 0 101.414 1.414l3-3a1 1 0 000-1.414z"
+                    clip-rule="evenodd" />
+            </svg>
+        </div>
+    </aside>
+    <main class="relative lg:left-40 bg-white lg:w-[80%] rounded-lg my-7 ">
+        <h4 class="text-sm font-semibold text-[#6b99c7] p-4">Basic details</h4>
+        <div
+            class="p-5 flex flex-col items-center justify-center  md:grid  md:grid-cols-2 lg:grid-cols-3 space-y-3 border border-gray-200 rounded-lg mx-4 shadow-md shadow-gray-300/70">
+            <div class="space-y-8">
+                <div>
+                    <p class="text-xs text-gray-500">Project name<span class="text-red-500">*</span></p>
+                    <input type="text" class="h-[38px] w-[293px] focus:outline-none rounded-md border border-gray-300 px-2
+                ">
+                </div>
+                <div>
+                    <p class="text-xs text-gray-500">Project Start Date<span class="text-red-500">*</span></p>
+                    <input type="date" class="h-[38px] w-[293px] focus:outline-none rounded-md border border-gray-300 px-2 text-xs
+                ">
+                </div>
+            </div>
+            <div class="space-y-8">
+                <div>
+                    <p class="text-xs text-gray-500">Project Code<span class="text-red-500">*</span></p>
+                    <input type="text" class="h-[38px] w-[293px] focus:outline-none rounded-md border border-gray-300 px-2
+                ">
+                </div>
+                <div>
+                    <p class="text-xs text-gray-500">Project End Date<span class="text-red-500">*</span></p>
+                    <input type="date" class="h-[38px] w-[293px] focus:outline-none rounded-md border border-gray-300 px-2 text-xs
+                ">
+                </div>
+            </div>
+            <div class="flex justify-center py-4 relative">
+                <div
+                    class="border border-dotted flex flex-col items-center space-y-7 border-2 border-gray-500 w-[176px] h-[176px] justify-center rounded-lg group">
+                    <svg xmlns="http://www.w3.org/2000/svg"
+                        class="h-5 w-5 hidden group-hover:inline absolute top-[20px] right-2 cursor-pointer "
+                        viewBox="0 0 20 20" fill="currentColor">
+                        <path fill-rule="evenodd"
+                            d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.707 7.293a1 1 0 00-1.414 1.414L8.586 10l-1.293 1.293a1 1 0 101.414 1.414L10 11.414l1.293 1.293a1 1 0 001.414-1.414L11.414 10l1.293-1.293a1 1 0 00-1.414-1.414L10 8.586 8.707 7.293z"
+                            clip-rule="evenodd" />
+                    </svg>
+
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M7 16a4 4 0 01-.88-7.903A5 5 0 1115.9 6L16 6a5 5 0 011 9.9M15 13l-3-3m0 0l-3 3m3-3v12" />
+                    </svg>
+                    <input type="file" hidden name="" id="">
+
+                    <button class="p-2 bg-blue-500 text-xs text-white rounded-md">
+                        Upload Project Logo
+                    </button>
+                </div>
+            </div>
+
+
+
+
+
+        </div>
+        <h4 class="text-sm font-semibold text-[#6b99c7] px-5 mt-5">Project details</h4>
+        <div
+            class="p-5 flex flex-col items-center justify-center  md:grid  md:grid-cols-2 lg:grid-cols-3 space-y-3 border border-gray-200 rounded-lg mx-4 shadow-md shadow-gray-300/70 my-4 ">
+            <div class="space-y-8">
+                <div>
+                    <p class="text-xs text-gray-500">Longitude<span class="text-red-500">*</span></p>
+                    <input type="text" class="h-[38px] w-[293px] focus:outline-none rounded-md border border-gray-300 px-2
+                ">
+                </div>
+                <div>
+                    <p class="text-xs text-gray-500">Select Country<span class="text-red-500">*</span></p>
+
+                    <select name="Country" id="" class="w-[293px] focus:outline-none text-gray-400">
+                        <option value="" class="text-xs">Select Country</option>
+                        <option value="">India</option>
+                        <option value="">USA</option>
+                        <option value="">UK</option>
+                    </select>
+
+                </div>
+                <div>
+                    <p class="text-xs text-gray-500">Address<span class="text-red-500">*</span></p>
+                    <input type="text" class="h-[38px] w-[293px] focus:outline-none rounded-md border border-gray-300 px-2
+                ">
+                </div>
+            </div>
+            <div class="space-y-8">
+                <div>
+                    <p class="text-xs text-gray-500">Latitude<span class="text-red-500">*</span></p>
+                    <input type="text" class="h-[38px] w-[293px] focus:outline-none rounded-md border border-gray-300 px-2
+                ">
+                </div>
+                <div>
+                    <p class="text-xs text-gray-500">Select State<span class="text-red-500">*</span></p>
+                    <select name="Country" id="" class="w-[293px] focus:outline-none text-gray-400">
+                        <option value="" class="text-xs">Select State</option>
+                        <option value="">India</option>
+                        <option value="">USA</option>
+                        <option value="">UK</option>
+                    </select>
+                </div>
+                <div>
+                    <p class="text-xs text-gray-500">Zipcode<span class="text-red-500">*</span></p>
+                    <input type="text" class="h-[38px] w-[293px] focus:outline-none rounded-md border border-gray-300 px-2
+                ">
+                </div>
+            </div>
+            <div class="space-y-8">
+                <div>
+                    <p class="text-xs text-gray-500">Project Type<span class="text-red-500">*</span></p>
+                    <input type="text" class="h-[38px] w-[293px] focus:outline-none rounded-md border border-gray-300 px-2
+                ">
+                </div>
+                <div>
+                    <p class="text-xs text-gray-500">Select City<span class="text-red-500">*</span></p>
+                    <select name="Country" id="" class="w-[293px] focus:outline-none text-gray-400">
+                        <option value="" class="text-xs">Select City</option>
+
+                        <option value="">Panjim</option>
+                        <option value="">USA</option>
+                        <option value="">UK</option>
+                    </select>
+                </div>
+                <div>
+                    <p class="text-xs text-gray-500">Select Currency<span class="text-red-500">*</span></p>
+                    <select name="Country" id="" class="w-[293px] focus:outline-none text-gray-400">
+                        <option value="" class="text-xs">Select Currency</option>
+                        <option value="">Rupee</option>
+                        <option value="">Us Dollar</option>
+                        <option value="">UK</option>
+                    </select>
+                </div>
+            </div>
+
+
+
+
+
+
+        </div>
+    </main>
+</body>
+
+</html>
